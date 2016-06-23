@@ -243,6 +243,111 @@
             
               
                 
+                <a class="post-title-link" href="/2016/06/23/How-to-add-birthdate-in-moderncv/" itemprop="url">
+                  How-to-add-birthdate-in-moderncv
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-23T22:22:19+08:00" content="2016-06-23">
+              2016-06-23
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/06/23/How-to-add-birthdate-in-moderncv/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/23/How-to-add-birthdate-in-moderncv/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Currently, moderncv doesn’t support the tag “birthdate”.<br>To add it in your resume, you just need to modify two files of morderncv lib.</p>
+<h2 id="moderncv-cls"><a href="#moderncv-cls" class="headerlink" title="moderncv.cls"></a>moderncv.cls</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\providecommand*&#123;\birthdatesymbol&#125;&#123;&#123;\Large\textasteriskcentered&#125;&#125;</span><br><span class="line"></span><br><span class="line">\newcommand*&#123;\birthdate&#125;[1]&#123;\def\@birthdate&#123;<span class="comment">#1&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="moderncvthemeclassic-sty"><a href="#moderncvthemeclassic-sty" class="headerlink" title="moderncvthemeclassic.sty"></a>moderncvthemeclassic.sty</h2><pre><code class="bash">\ifthenelse{\isundefined{\@birthdate}}{}{\maketitledetailsnewline\birthdatesymbol~\@birthdate}%
+</code></pre>
+<p>Happy learning :)</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/05/17/hello-world/" itemprop="url">
                   Hello World
                 </a>
@@ -372,7 +477,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
